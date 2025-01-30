@@ -1,0 +1,17 @@
+{% extends 'index.html' %}
+{% block title %}Django Third{% endblock %}
+{% block content %}3
+<h1>{{ name }}</h1>
+<h1>My Name is {{ name }}</h1>
+<ul>
+    {% for fruit in fruits %}
+    <li>{{ fruit }}</li>
+    {% endfor %}
+</ul>
+{% if num1 < num2 %}
+<h1>{{num1}} is  smaller than {{num2}}</h1>
+{% else %}
+<h1>{{num2}} is  smaller than {{num1}}</h1>
+{% endif %}
+<h1>{{con}}</h1>
+{% endblock %}
